@@ -1,6 +1,7 @@
 import { useState, React } from "react";
 
 function ProjectForm({ addProject }) {
+  // State for new project inputs
   const [newProject, setNewProject] = useState({
     name: "",
     timeToComplete: "",
@@ -8,10 +9,12 @@ function ProjectForm({ addProject }) {
     description: "",
   });
 
+  // Handle text input changes
   function handleChange(event) {
     setNewProject({ ...newProject, [event.target.name]: event.target.value });
   }
 
+  // Handle checkbox separately
   function handleCheckbox(event) {
     const { name, checked } = event.target;
     setNewProject((prevSettings) => ({
@@ -20,6 +23,7 @@ function ProjectForm({ addProject }) {
     }));
   }
 
+  // Add project and reset form
   function handleSubmit(event) {
     event.preventDefault();
     addProject(newProject);

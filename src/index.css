@@ -1,51 +1,27 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #828282;
 }
 
+/* Page title Styling */
 .headerText {
   align-items: center;
   display: flex;
   text-align: center;
   color: #0400e3;
-  font-size: 6rem;
+  font-size: 4rem;
   font-style: oblique;
   max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
 }
 
-.App {
-  margin: 0% 5% 0% 5%;
-  text-align: center;
-}
-
 .navWrapper {
-  margin-bottom: 2%;
+  margin-bottom: 1rem;
 }
 
-.normalText {
-  font-family: Georgia, serif;
-  font-size: .75em;
-}
-
-.normalText ul {
-  font-family: Georgia, serif;
-  font-size: .75em;
-  text-align: left;
-}
-
-.subtleText {
-  color: #D1D1D1;
-  font-size: .75em;
-}
-
-
-.indexWrapper {
-  margin: auto;
-}
 
 /* Container Styling */
 .formContainer {
@@ -58,7 +34,7 @@ body {
   border: 1px solid #000000;
 }
 
-/* Title */
+/* Title of form submission */
 .title {
   text-align: center;
   color: #0400ff;
@@ -73,7 +49,7 @@ body {
   gap: 1.25rem;
 }
 
-/* Input + Label Styling */
+/* Formgroups style */
 .formGroup {
   display: flex;
   flex-direction: column;
@@ -119,6 +95,7 @@ body {
   transform: scale(1.02);
 }
 
+/* Header Styling */
 .headerSection {
   display: flex;
   align-items: center;
@@ -136,7 +113,7 @@ body {
   letter-spacing: 0.25rem;
 }
 
-/* Checkbox Filter Styling */
+/* Filter Styling */
 .filterSection {
   display: flex;
   align-items: center;
@@ -156,7 +133,6 @@ body {
   font-size: 1rem;
 }
 
-
 .filterSectionColumn {
   display: flex;
   align-items: center;
@@ -175,7 +151,7 @@ body {
   font-weight: 300;
 }
 
-/* Grid layout for cards */
+/* Grid layout for projectss */
 .projectList {
   display: flex;
   flex-direction: column;
@@ -189,17 +165,17 @@ body {
 
 
 .card {
-  /* Add shadows to create the "card" effect */
+  /* Add shadows */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
 }
 
-/* On mouse-over, add a deeper shadow */
+/* Add deeper shadow on hover  */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-/* Add some padding inside the card container */
+/* Adjust card container */
 .container {
   padding: 0.25rem 0.5rem;
   display: flex;
@@ -222,6 +198,13 @@ body {
   align-items: center;
 }
 
+.container h4 {
+  color: #0400ff;
+  margin-bottom: 0;
+  margin-top: 0.25rem;
+}
+
+/* Image styling */
 .cardImage {
   width: 100px;
   height: 100px;
@@ -230,8 +213,3 @@ body {
   margin-right: 1rem;
 }
 
-.container h4 {
-  color: #0400ff;
-  margin-bottom: 0;
-  margin-top: 0.25rem;
-}

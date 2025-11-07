@@ -6,10 +6,12 @@ function ProjectList({ projects }) {
   const [selectedSearch, onSearchChange] = useState("");
   const [sort, setSort] = useState("name");
 
+  // Toggle finished projects display
   function handleFinishedClick() {
     setDisplayFinished((prevState) => !prevState);
   }
 
+  // Sort projects based on selected criteria
   if (sort === "name") {
     projects.sort((a, b) => {
       const nameA = a.name.toUpperCase();
@@ -24,10 +26,12 @@ function ProjectList({ projects }) {
     });
   }
 
+  // Sort by time to complete
   if (sort === "timeToComplete") {
     projects.sort((a, b) => a.timeToComplete - b.timeToComplete);
   }
 
+  // Filter projects based on search and finished status
   const projectsToDisplay = projects.filter((p) => {
     if (!displayFinished && p.name.toLowerCase().includes(selectedSearch.toLowerCase())) return true;
     if (p.name.toLowerCase().includes(selectedSearch.toLowerCase())){return (!p.inProgress);}

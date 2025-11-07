@@ -1,5 +1,4 @@
 import { useState, React } from "react";
-import piggy from "../assets/porco.png";
 
 function ProjectCard({ project }) {
   return (
